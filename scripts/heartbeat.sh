@@ -29,8 +29,12 @@ fi
 
 echo "[heartbeat] $(date -u '+%F %T') UTC : démarrage du cycle hebdomadaire."
 
+# --strict-mcp-config sans --mcp-config : aucun serveur MCP ne se charge.
+# Indispensable : le plugin Telegram démarrerait sinon un second poller et
+# déconnecterait la session de canal interactive (conflit 409 Telegram).
 claude -p "$(cat scripts/heartbeat_prompt.md)" \
   --allowedTools "Read,Glob,Grep,Write,Edit,WebFetch,WebSearch,Bash(node:*)" \
+  --strict-mcp-config \
   2>&1
 
 echo "[heartbeat] $(date -u '+%F %T') UTC : cycle terminé."
