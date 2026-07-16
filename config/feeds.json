@@ -1,0 +1,19 @@
+{
+  "_comment": "Flux RSS de la veille Ghitastar. Chaque flux a une catégorie : elle sert à équilibrer la veille (labo = annonces produit, media = couverture, vc = capital, research = signaux faibles techniques). Mets enabled:false pour désactiver sans supprimer. Vérifie un nouveau flux avec : node scripts/read_rss_feeds.js --check",
+  "feeds": [
+    { "name": "OpenAI", "url": "https://openai.com/blog/rss.xml", "category": "labo" },
+    { "name": "Google DeepMind", "url": "https://deepmind.google/blog/rss.xml", "category": "labo" },
+    { "name": "Hugging Face", "url": "https://huggingface.co/blog/feed.xml", "category": "labo" },
+    { "name": "Simon Willison", "url": "https://simonwillison.net/atom/everything/", "category": "research" },
+    { "name": "Interconnects (Nathan Lambert)", "url": "https://www.interconnects.ai/feed", "category": "research" },
+    { "name": "Import AI (Jack Clark)", "url": "https://importai.substack.com/feed", "category": "research" },
+    { "name": "arXiv cs.AI", "url": "http://export.arxiv.org/rss/cs.AI", "category": "research", "enabled": false },
+    { "name": "TechCrunch AI", "url": "https://techcrunch.com/category/artificial-intelligence/feed/", "category": "media" },
+    { "name": "TechCrunch Venture", "url": "https://techcrunch.com/category/venture/feed/", "category": "vc" },
+    { "name": "VentureBeat AI", "url": "https://venturebeat.com/category/ai/feed/", "category": "media" },
+    { "name": "Ars Technica AI", "url": "https://arstechnica.com/ai/feed/", "category": "media" },
+    { "name": "The Verge AI", "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", "category": "media" },
+    { "name": "Crunchbase News", "url": "https://news.crunchbase.com/feed/", "category": "vc" },
+    { "name": "a16z", "url": "https://a16z.com/feed/", "category": "vc", "enabled": false, "_note": "Testé le 2026-07-14 : 404. a16z n'expose plus de flux RSS public sur les chemins usuels. Laissé désactivé plutôt que supprimé, au cas où il reviendrait." }
+  ]
+}

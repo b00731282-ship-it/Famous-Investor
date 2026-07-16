@@ -1,0 +1,9 @@
+# Secrets : jamais committés.
+.env
+*.pem
+*credentials*.json
+
+# Brouillons générés
+drafts/
+
+node_modules/

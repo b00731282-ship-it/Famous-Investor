@@ -1,0 +1,4 @@
+{
+  "_comment": "Aucun serveur MCP n'est requis. La recherche web passe par l'outil WebSearch natif du canal Claude (ou scripts/web_search.js en headless), la veille par scripts/read_rss_feeds.js, et Substack par scripts/create_substack_draft.js — Substack n'expose aucun serveur MCP officiel. Pour ajouter un serveur MCP, déclare-le sous 'mcpServers' en lisant tout secret depuis l'environnement du VPS, par exemple \"${MON_TOKEN}\", jamais en clair.",
+  "mcpServers": {}
+}
