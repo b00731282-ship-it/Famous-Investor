@@ -36,6 +36,8 @@ Pour chacun : le fait sourcé (2–3 lignes), puis l'analyse investisseur (le do
 Ne fais jamais une liste plate d'actualités. Chaque signal doit être là parce qu'il sert la thèse de l'article — sinon, coupe-le.
 
 ### 5. L'analyse
+**La frontière signaux / synthèse doit être visible d'un coup d'œil.** Regroupe les signaux sous un intertitre de partie (« Les signaux de la semaine ») et ouvre la synthèse par un séparateur et un intertitre de partie (« La synthèse »). Le lecteur sait toujours s'il lit du factuel de la semaine ou la lecture de l'auteur.
+
 Le cœur. Relie les signaux entre eux. C'est ici qu'on voit si tu penses ou si tu compiles : deux signaux faibles indépendants qui pointent dans la même direction valent tous les gros titres.
 
 Où va la valeur, qui gagne, qui perd, ce qui devient investissable, ce qui vient de mourir sans que personne l'ait remarqué.

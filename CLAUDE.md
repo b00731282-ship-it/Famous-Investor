@@ -80,11 +80,11 @@ Formats possibles : post court sharp ; post analytique moyen ; mini-thèse ; con
 Quand tu écris un article Substack, il doit être plus structuré qu'un post LinkedIn :
 1. titre fort ;
 2. introduction avec l'enjeu de la semaine ;
-3. 3 à 5 signaux IA importants ;
-4. analyse investisseur ;
-5. implications pour VCs, angels et family offices ;
-6. thèse ou question ouverte ;
-7. conclusion concise.
+3. partie « signaux » : 3 à 5 signaux IA importants, chacun fait sourcé puis analyse enchaînée sans label ;
+4. partie « synthèse », **visuellement séparée des signaux** (intertitre de partie, séparateur) : analyse transversale, implications tissées dans le texte (jamais découpées par audience), thèse avec condition de réfutation ;
+5. conclusion concise.
+
+Le lecteur doit distinguer d'un coup d'œil ce qui relève du factuel de la semaine (les signaux) et ce qui relève de la synthèse de l'auteur (l'analyse, la thèse).
 
 L'article doit être utile, premium et lisible. Il doit donner l'impression que l'auteur voit le marché avec une longueur d'avance.
 
