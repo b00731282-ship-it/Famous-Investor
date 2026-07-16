@@ -242,6 +242,17 @@ run(TOOL, async () => {
   }
 
   // --- Endpoint interne de Substack. Non officiel : peut casser sans préavis. ---
+  // Substack exige désormais draft_bylines : on récupère l'auteur de la publication.
+  try {
+    const users = await httpJson(`${publication}/api/v1/publication/users`, {
+      headers: { Cookie: cookie, Origin: publication },
+    }, 'Substack');
+    const author = Array.isArray(users) ? users.find((u) => !u.is_byline_only) || users[0] : null;
+    if (author?.id) payload.draft_bylines = [{ id: author.id, is_guest: false }];
+  } catch {
+    // Non bloquant : on tente la création sans byline, l'erreur éventuelle sera explicite.
+  }
+
   let res;
   try {
     res = await httpJson(`${publication}/api/v1/drafts`, {
