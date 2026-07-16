@@ -29,7 +29,9 @@ Entre directement dans le sujet. Pose la tension de la semaine : le fait qui dé
 Pas de « Bienvenue dans cette nouvelle édition ». Pas de sommaire. Le lecteur est adulte.
 
 ### 4. Les signaux de la semaine (3 à 5)
-Pour chacun : le fait sourcé (2–3 lignes), puis **la lecture investisseur** (le double). Le fait est le prétexte ; l'analyse est le produit.
+Pour chacun : le fait sourcé (2–3 lignes), puis l'analyse investisseur (le double en volume). Le fait est le prétexte ; l'analyse est le produit.
+
+**L'analyse s'enchaîne naturellement après le fait, sans label.** Jamais de « La lecture investisseur : », « Pourquoi c'est important : » ou tout autre marqueur visible. Le lecteur doit sentir le regard investisseur sans qu'on le lui annonce.
 
 Ne fais jamais une liste plate d'actualités. Chaque signal doit être là parce qu'il sert la thèse de l'article — sinon, coupe-le.
 
@@ -38,13 +40,10 @@ Le cœur. Relie les signaux entre eux. C'est ici qu'on voit si tu penses ou si t
 
 Où va la valeur, qui gagne, qui perd, ce qui devient investissable, ce qui vient de mourir sans que personne l'ait remarqué.
 
-### 6. Implications par audience
-Explicite, parce que tes lecteurs ne sont pas homogènes :
-- **VCs** : ce qui change dans le deal flow et le timing.
-- **Angels** : ce qu'il faut demander aux fondateurs sur ce sujet, dès le premier call.
-- **Family offices** : l'exposition au risque, ce qui reste debout quand la vague redescend.
+### 6. Implications — tissées, jamais découpées par audience
+**Pas de section « Implications par audience », pas d'étiquettes « VCs : / Angels : / Family offices : ».** Les implications sont intégrées dans l'analyse, subtiles mais hyper sharp : ce qui change dans le deal flow et le timing, la question à poser aux fondateurs dès le premier call, l'exposition qui reste debout quand la vague redescend. Chaque type de lecteur doit se reconnaître sans être nommé.
 
-Cette section est la plus lue. C'est elle qui transforme un lecteur en contact.
+C'est cette matière-là qui transforme un lecteur en contact — elle doit être présente, juste pas signalée par un intertitre.
 
 ### 7. Thèse et conclusion
 Une thèse claire (voir `thesis-building`), avec sa condition de réfutation. Puis une conclusion courte — trois phrases. Une question ouverte sincère est un excellent point final : elle appelle la réponse par email.
@@ -57,7 +56,8 @@ Une thèse claire (voir `thesis-building`), avec sa condition de réfutation. Pu
 - Des intertitres qui **disent quelque chose** (« Le compute n'est plus le goulot d'étranglement »), pas des étiquettes (« Analyse »).
 - Le chiffre exact plutôt que l'adjectif. « 40 % de baisse en six mois » bat « une baisse spectaculaire ».
 - Une pointe d'humour sec est bienvenue une ou deux fois. Jamais plus : le premium ne fait pas le pitre.
-- Les liens vers les sources sont dans le texte, pas en note de bas de page.
+- **Jamais de tiret cadratin (—) ni semi-cadratin (–).** Virgule, deux-points, point-virgule, parenthèses ou point.
+- Les liens vers les sources sont des hyperliens posés sur un mot ou une expression courte et naturelle du paragraphe. Jamais d'URL brute, jamais de note de bas de page, jamais une phrase entière en ancre.
 
 ## Livrer
 - **Titre + sous-titre + corps**, en Markdown, prêt pour Substack.
