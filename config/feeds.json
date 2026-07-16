@@ -14,6 +14,17 @@
     { "name": "Ars Technica AI", "url": "https://arstechnica.com/ai/feed/", "category": "media" },
     { "name": "The Verge AI", "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", "category": "media" },
     { "name": "Crunchbase News", "url": "https://news.crunchbase.com/feed/", "category": "vc" },
+    { "name": "SemiAnalysis", "url": "https://semianalysis.com/feed/", "category": "research", "_note": "Économie du compute. Estimations propriétaires : citer comme estimations, jamais comme faits bruts." },
+    { "name": "Tomasz Tunguz", "url": "https://tomtunguz.com/index.xml", "category": "vc", "_note": "Analyse VC data-driven. Opinions : à créditer." },
+    { "name": "ChinAI (Jeff Ding)", "url": "https://chinai.substack.com/feed", "category": "research" },
+    { "name": "One Useful Thing (Ethan Mollick)", "url": "https://www.oneusefulthing.org/feed", "category": "research" },
+    { "name": "Meta AI", "url": "https://ai.meta.com/blog/rss/", "category": "labo", "enabled": false, "_note": "Testé le 2026-07-16 : 404, le blog Meta AI n'expose pas de RSS public. Couvert via Meta Engineering et les médias." },
+    { "name": "Meta Engineering", "url": "https://engineering.fb.com/feed/", "category": "labo", "_note": "Blog ingénierie de Meta (infra IA, PyTorch). Remplace le blog Meta AI, sans RSS public." },
+    { "name": "Mistral AI", "url": "https://mistral.ai/rss.xml", "category": "labo" },
+    { "name": "Latent Space", "url": "https://www.latent.space/feed", "category": "research" },
+    { "name": "Stratechery", "url": "https://stratechery.com/feed/", "category": "media", "_note": "Articles gratuits seulement. Opinions : à créditer." },
+    { "name": "StrictlyVC", "url": "https://www.strictlyvc.com/feed/", "category": "vc" },
+    { "name": "Axios Pro Rata", "url": "https://api.axios.com/feed/newsletter/pro-rata", "category": "vc", "enabled": false, "_note": "Testé le 2026-07-16 : 404 sur tous les chemins connus. Le deal flow quotidien est couvert par StrictlyVC." },
     { "name": "a16z", "url": "https://a16z.com/feed/", "category": "vc", "enabled": false, "_note": "Testé le 2026-07-14 : 404. a16z n'expose plus de flux RSS public sur les chemins usuels. Laissé désactivé plutôt que supprimé, au cas où il reviendrait." }
   ]
 }
