@@ -14,7 +14,16 @@ Ces déclencheurs s'exécutent dans la **session de canal authentifiée** (celle
 5. Écrire dans la liste Attio cible (voir ci-dessous) : créer le record `people` s'il n'existe pas, l'ajouter à la liste avec `investments`, `country`, `deal_shared`.
 6. Répondre sur Telegram : tableau des N contacts (nom, société, pays, # investments, deal matché, lien LinkedIn), + le lien de la liste Attio.
 
-**Nombre par défaut** : 10. Respecter le nombre demandé.
+**Nombre par défaut** : **5 nouveaux contacts par deal actif** de la liste Fundraising. Respecter le nombre demandé si l'utilisatrice en précise un autre.
+
+## Planification — « chaque matin »
+
+Job récurrent armé dans la **session authentifiée** (CronCreate, id `a708a671`, ~08:07 Paris) : source 5 investisseurs par deal actif, matche, écrit dans Specter DB - Day, notifie Telegram.
+
+Limites **assumées** (le job dépend de la session, car les connecteurs Specter/Attio n'existent que là) :
+- **Session-only + expiration 7 jours** : si la session redémarre ou après 7 jours, le job disparaît. Il faut le ré-armer.
+- **Fallback fiable** : l'utilisatrice peut toujours déclencher à la main sur Telegram (« lance les contacts »).
+- **Pour un vrai « set & forget » durable** : câbler Attio (clé API REST) et Specter en direct dans `.mcp.json` / scripts (Option A), ce qui permettrait un cron système headless. Non fait à ce jour.
 
 **Liste Attio cible** : **« Specter DB - Day »** (slug `specter_db_de_2`, list_id `f114ade7-77c9-4836-87c2-1532855ba736`, parent = people). Champs à remplir : `name`, `linkedin`, `job_title` (avec la société), `description` (sur le record people) ; `investments`, `exits`, `country`, `deal_shared` (sur l'entrée de liste).
 
