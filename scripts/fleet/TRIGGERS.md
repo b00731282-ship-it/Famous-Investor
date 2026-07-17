@@ -16,6 +16,10 @@ Ces déclencheurs s'exécutent dans la **session de canal authentifiée** (celle
 
 **Nombre par défaut** : 10. Respecter le nombre demandé.
 
-**Liste Attio cible** : `<À CONFIRMER avec l'utilisatrice>`. Le champ de matching `deal_shared` (options NEURA / Peec AI / LAP Coffee) existe aujourd'hui sur la liste « Specter DB - DE » (`db_specter`). Une nouvelle liste dédiée « Daily Sourcing » nécessite que ces attributs personnalisés (#investments, deal_shared…) y soient créés dans l'UI Attio avant que l'agent puisse les remplir.
+**Liste Attio cible** : **« Specter DB - Day »** (slug `specter_db_de_2`, list_id `f114ade7-77c9-4836-87c2-1532855ba736`, parent = people). Champs à remplir : `name`, `linkedin`, `job_title` (avec la société), `description` (sur le record people) ; `investments`, `exits`, `country`, `deal_shared` (sur l'entrée de liste).
+
+**Deals à matcher** : lus depuis la liste **Fundraising** (`startup_fundraising`, companies). Deals actifs au 17/07/2026 : **Peec AI** (AI martech) et **LAP Coffee** (consumer/F&B). Le champ `deal_shared` propose NEURA / Peec AI / LAP Coffee. Matcher selon le focus de l'investisseur (AI/robotics → Peec AI ; consumer/F&B → LAP Coffee).
+
+**Limite `country`** : c'est un select à options fixes (12 pays : Germany, US, UK, Spain, Switzerland, Portugal, Poland, Singapore, Austria, UAE, Saudi Arabia, Israel). Attio refuse une valeur hors liste et l'API ne peut pas créer d'option. Pour un pays absent (ex. Sweden, France), laisser `country` vide et le signaler ; l'utilisatrice ajoute l'option dans l'UI Attio, puis on backfill. Le pays réel reste dans `data/outbound/candidates.json`.
 
 **Garde-fou** : le sourcing écrit dans le CRM (action réelle sur le workspace d'un vrai fonds), mais **ne contacte personne**. L'outreach reste séparé et en « rédige, tu envoies » (voir `agents/outreach.md`).
