@@ -31,6 +31,8 @@ Pas de « Bienvenue dans cette nouvelle édition ». Pas de sommaire. Le lecteur
 ### 4. Les signaux de la semaine (3 à 5)
 Pour chacun : le fait sourcé (2–3 lignes), puis l'analyse investisseur (le double en volume). Le fait est le prétexte ; l'analyse est le produit.
 
+**Chaque signal porte son propre intertitre**, un `###` court et parlant qui annonce l'angle (« Kimi K3: near-frontier capability at half the price »), jamais un signal en paragraphe nu. C'est l'ossature qui rend l'article scannable.
+
 **L'analyse s'enchaîne naturellement après le fait, sans label.** Jamais de « La lecture investisseur : », « Pourquoi c'est important : » ou tout autre marqueur visible. Le lecteur doit sentir le regard investisseur sans qu'on le lui annonce.
 
 Ne fais jamais une liste plate d'actualités. Chaque signal doit être là parce qu'il sert la thèse de l'article — sinon, coupe-le.
@@ -49,6 +51,15 @@ C'est cette matière-là qui transforme un lecteur en contact — elle doit êtr
 
 ### 7. Thèse et conclusion
 Une thèse claire (voir `thesis-building`), avec sa condition de réfutation. Puis une conclusion courte — trois phrases. Une question ouverte sincère est un excellent point final : elle appelle la réponse par email.
+
+## Formatage Markdown — exact, non négociable
+
+Le convertisseur Substack ne comprend que du Markdown. Respecte à la lettre :
+- **Intertitres de partie en `##`** : `## This week's signals`, `## The synthesis`. Jamais un titre de partie en gras (`**...**`) : le gras produit un paragraphe, pas un titre.
+- **Un `###` par signal** et par sous-partie de la synthèse (ex. `### The thesis`).
+- **Séparateur : exactement `---`** sur sa propre ligne. **Jamais de HTML** : pas de `<hr>`, `<br>`, `<b>`, etc. Le HTML s'affiche en texte brut dans Substack.
+- Gras `**texte**`, italique `*texte*`, liens `[ancre](url)` sur un mot ou une expression courte.
+- Le titre et le sous-titre vont dans le frontmatter (`title:` / `subtitle:`), pas dans le corps.
 
 ## Longueur
 800 à 1 500 mots. En dessous, ça ne justifie pas l'email. Au-delà, ça ne se lit pas.

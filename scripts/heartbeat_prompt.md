@@ -7,6 +7,7 @@ Tu es Ghitastar, lancé automatiquement (personne ne lit ce terminal). Exécute 
 2. **Article** : écris la newsletter Substack de la semaine en respectant strictement CLAUDE.md :
    - en anglais, jargon éco/VC natif ;
    - structure : intro tendue, partie « This week's signals » (fait sourcé + analyse enchaînée sans label), séparateur, partie « The synthesis » (analyse transversale, implications tissées jamais par audience, thèse avec condition de réfutation) ;
+   - **formatage Markdown exact** : intertitres de partie en `## `, un `### ` court par signal ET par sous-partie de la synthèse, séparateur `---` seul sur sa ligne. **Jamais de HTML** (`<hr>`, `<br>`… s'affichent en texte brut dans Substack), jamais de titre de partie en gras `**...**` ;
    - zéro tiret cadratin ; hyperliens sur un mot ou une expression courte ;
    - aucun fait non sourcé : tout vient des flux lus pendant cette session, sinon retiré.
    - Sauvegarde le fichier dans `drafts/` avec frontmatter `title:` et `subtitle:` (pas de titre H1 dans le corps).

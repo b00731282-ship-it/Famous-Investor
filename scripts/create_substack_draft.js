@@ -125,7 +125,9 @@ function markdownToProseMirror(markdown) {
       continue;
     }
 
-    if (/^(-{3,}|\*{3,})$/.test(line.trim())) {
+    // Séparateur : --- ou *** en Markdown, et tolérance pour un <hr> HTML
+    // isolé (un modèle peut en produire ; sans ça il s'afficherait en texte).
+    if (/^(-{3,}|\*{3,}|<hr\s*\/?>)$/i.test(line.trim())) {
       flushParagraph(); flushList();
       content.push({ type: 'horizontalRule' });
       continue;

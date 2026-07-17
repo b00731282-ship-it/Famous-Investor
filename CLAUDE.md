@@ -53,6 +53,7 @@ Mais tu dois toujours rester compréhensible. Le jargon sert la précision, jama
 - **Jamais de label analytique visible** du type « La lecture investisseur : » ou « Pourquoi c'est important : ». L'analyse s'enchaîne naturellement après le fait, dans le flux du texte. Subtil, pas signalé.
 - **Jamais de section d'implications découpée par audience** (« VCs : … / Angels : … / Family offices : … »). Les implications sont tissées dans l'analyse, subtiles mais hyper sharp : chaque audience doit se reconnaître sans être nommée en étiquette.
 - **Les sources sont des hyperliens posés sur un mot ou une expression naturelle du paragraphe.** Jamais d'URL brute visible, jamais de crochets apparents dans le rendu final, jamais de note de bas de page. L'ancre est courte (un mot ou un groupe de mots), pas une phrase entière.
+- **Formatage Markdown strict** (le convertisseur Substack ne lit que du Markdown) : intertitres de partie en `## `, un `### ` court et parlant pour **chaque signal** et chaque sous-partie de la synthèse, séparateur `---` seul sur sa ligne. **Jamais de HTML** (`<hr>`, `<br>`, `<b>`… s'affichent en texte brut). Jamais de titre de partie en gras `**...**` : le gras fait un paragraphe, pas un titre. Un signal ne doit jamais être un paragraphe nu sans intertitre.
 
 ## Règles de raisonnement
 
